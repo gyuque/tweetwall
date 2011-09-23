@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja-jp" xml:lang="ja-jp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="tw.css"  />
+
+		<script src="./js/test-result.js" type="text/javascript"></script>
+
+		<script src="./js/oauth.js" type="text/javascript"></script>
+		<script src="./js/jquery-1.6.2.js" type="text/javascript"></script>
+		<script src="./js/jquery.scrollTo-1.4.2.js" type="text/javascript"></script>
+		<script src="./js/utils.js" type="text/javascript"></script>
+		<script src="./js/slide-nav.js" type="text/javascript"></script>
+		<script src="./js/action-menu.js" type="text/javascript"></script>
+		<script src="./js/channel-tab.js" type="text/javascript"></script>
+		<script src="./js/tweet-model.js" type="text/javascript"></script>
+		<script src="./js/alert-layer.js" type="text/javascript"></script>
+		<script src="./js/tw.js" type="text/javascript"></script>
+		<script src="./js/single-view.js" type="text/javascript"></script>
+		
+		<title>TweetWall for Chrome</title>
+	</head>
+	<body onload="void launch_tw({PINFormId: 'pinform', TweetListContainerId: 'tweet-list-container', TweetListItemClassName: 'twlist-item', MainChannelTabId: 'main-page-list'})">
+		<ul id="main-page-list">
+			<!--li class="selected">Home</li>
+			<li>Mentions</li>
+			<li>DM</li>
+			<li> </li-->
+		</ul>
+		
+		<div id="main-slide-nav"><div id="tweet-list-container"></div><div id="tweet-detail-container"></div></div>
+		<div id="pin-form-container">
+			<h2>Input OAuth PIN</h2>
+			<form action="javascript: void(0)" id="pinform"><input type="text" /><input type="submit" /></form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "TweetWall",
+  "description": "Twitter on the wall",
+  "version": "0.0.2",
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "permissions": [
+    "https://api.twitter.com/*",
+    "http://api.twitter.com/*"
+  ],
+  "icons": {
+    "16": "images/tw-16.png",
+    "128": "images/tw-128-96.png"
+  }
+}

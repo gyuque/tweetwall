@@ -1,0 +1,298 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #bcf;
+}
+
+a:visited {
+	color: #abe;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	color: #fff;
+	overflow: hidden;
+}
+
+/* main nav */
+
+#main-page-list {
+	margin: 0;
+	padding: 0;
+}
+
+#main-page-list li {
+	margin: 0 2px 1px 0;
+	padding: 3px 0 0 0;
+	display: block;
+	list-style-type: none;
+	height: 33px;
+	font-size: 24px;
+	overflow: hidden;
+	font-weight: bold;
+	border-bottom: 3px solid #666;
+	width: 24.6%;
+	text-align: center;
+	color: #aaa;
+	float: left;
+}
+
+#main-page-list li.selected {
+	border-bottom-color: #39f;
+	color: #fff;
+	text-shadow: 0 0 4px #28f;
+	background: -webkit-gradient(linear, left center, left bottom, from(#101519), to(#259));
+}
+
+#tweet-list-container,
+.tweetlist-inner {
+	margin: 0;
+	padding: 0;
+}
+
+#main-slide-nav {
+	clear: both;
+}
+
+#tweet-list-container {
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#tweet-detail-container {
+	width: 100%;
+	overflow: visible;
+}
+
+.twlist-item {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #333;
+	margin: 0;
+	padding: 9px 19px;
+	list-style-type: none;
+	position: relative;
+	min-height: 128px;
+	overflow: hidden;
+}
+
+.single-tweet-item-container {
+	margin: 0 9px 0 0;
+	padding: 9px 19px;
+	list-style-type: none;
+	position: relative;
+	min-height: 128px;
+	overflow: hidden;
+}
+
+.twlist-item.heading-item {
+	min-height: 28px;
+	font-size: 23px;
+	text-align: center;
+}
+
+.twlist-item .caption,
+.single-tweet-item-container .caption {
+	position: absolute;
+	left: 18px;
+	top: 9px;
+}
+
+.twlist-item.selected {
+	background: -webkit-gradient(linear, left top, left bottom, from(#27f), to(#14b));
+}
+
+.twlist-item h3,
+.single-tweet-item-container h3 {
+	margin-left: 150px;
+	margin-top: 0.2em;
+	margin-bottom: 0.4em;
+	font-size: 130%;
+	color: #aaa;
+}
+
+.twlist-item.heading-item h3,
+.twlist-item.heading-item.selected h3 {
+	margin: 0;
+	color: #fff;
+}
+
+.twlist-item.selected h3,
+.twlist-item.selected .tweet-footer,
+.twlist-item.selected .rt-by {
+	color: #cde;
+}
+
+.twlist-item .tweet-text,
+.single-tweet-item-container .tweet-text {
+	font-size: 180%;
+	margin-left: 150px;
+	margin-bottom: 18px;
+	line-height: 1.2em;
+}
+
+.twlist-item a.tweet-hashtag {
+	text-decoration: none;
+	opacity: 0.8;
+	font-size: 90%;
+}
+
+.twlist-item .caption img,
+.single-tweet-item-container .caption img {
+	border-radius: 9px;
+	width: 128px;
+	height: 128px;
+}
+
+.tweet-footer {
+	color: #aaa;
+	text-align: right;
+	font-size: 120%;
+	position: absolute;
+	bottom: 5px;
+	right: 7px;
+}
+
+.fav-badge {
+	width: 48px;
+	height: 48px;
+	background: url(images/fav-large.png) top left no-repeat;
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 1px;
+}
+
+.selected .fav-badge {
+	opacity: 0.8;
+}
+
+.faved .fav-badge {
+	background-position: top right;
+}
+
+.selected.faved .fav-badge {
+	opacity: 1;
+}
+
+.rt-indicator {
+	vertical-align: middle;
+	margin-right: 9px;
+}
+
+.rt-by {
+	font-size: 90%;
+	color: #888;
+	padding-left: 1em;
+}
+
+.rt-ribbon-image {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.retweeted-by-me .rt-ribbon-image {
+	display: block;
+}
+
+/* menu */
+
+.actionmenu-list {
+	margin: 2em 0 0 0;
+	padding: 0;
+}
+
+.actionmenu-list li {
+	border: 1px solid transparent;
+	margin: 0 10%;
+	padding: 7px 9px;
+	list-style-type: none;
+	min-width: 50%;
+	font-size: 26px;
+	color: #aaa;
+	position: relative;
+}
+
+.actionmenu-list li.selected {
+	color: #fff;
+	border: 1px solid #bcf;
+	border-radius: 4px;
+	box-shadow: inset 0 0 9px 2px #27f, 0 0 8px 0 #27f;
+}
+
+.actionmenu-list li.selected.active {
+	background-color: #125;
+	box-shadow: inset 0 0 9px 2px #27f, 0 0 19px 9px #27f;
+}
+
+.actionmenu-list-icon {
+	opacity: 0.5;
+	vertical-align: middle;
+	margin-right: 0.5em;
+	background: url(images/all-icons.png) no-repeat;
+}
+
+.sending .actionmenu-list-icon {
+	background: url(images/spinner.gif) no-repeat 0 2px;
+}
+
+.selected .actionmenu-list-icon {
+	opacity: 1;
+}
+
+/* Alert Layer */
+.alert-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+	opacity: 0;
+	display: none;
+	z-index: 998;
+}
+
+.alert-layer span {
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 88px;
+	background: url(images/x.png) no-repeat top center;
+}
+
+#pin-form-container {
+	margin-top: 4em;
+	text-align: center;
+}
+
+#pin-form-container form {
+	font-size: 30px;
+}
+
+/* Scroll Bars */
+::-webkit-scrollbar-button {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+	background: #000;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background: #666;
+	border-radius: 8px;
+	border: 1px solid #000;
+}
+
+::-webkit-scrollbar-corner {
+	display: none;
+}
